@@ -12,3 +12,6 @@ A simple, visually appealing recipe card project built with **HTML, CSS, and Jav
 - HTML5
 - CSS3
 - JavaScript
+
+## Live Link
+https://receipecard.netlify.app/
