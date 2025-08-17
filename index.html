@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulab Jamun Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="recipe-card">
+    <!-- Title -->
+    <h1 class="recipe-title">🤤 Gulab Jamun</h1>
+
+    <!-- Image -->
+    <img src="gulabjamun_images.jpg" alt="Gulab jamun" class="recipe-img">
+
+    <!-- Prep Info -->
+    <div class="prep-info">
+      <p><strong>Prep Time:</strong> 40 mins</p>
+      <p><strong>Servings:</strong> 10-12 pieces</p>
+    </div>
+
+    <!-- Toggle Ingredients -->
+    <button id="toggleIngredients" class="btn">Show Ingredients</button>
+    <ul class="ingredients hidden">
+      <li>1 cup milk powder</li>
+      <li>¼ cup maida flour</li>
+      <li>1 tbsp rava</li>
+      <li>½ tsp baking powder</li>
+      <li>½ 2 tbsp ghee</li>
+      <li>¼ cup milk (adjust as needed)r</li>
+      <li>Oil or ghee for deep frying</li>
+      <li>2 cups water</li>
+      <li>2-3 cardamom pods, crushed</li>
+      <li>Few drops of rose water</li>
+    </ul>
+
+    <!-- Steps -->
+    <button id="startCooking" class="btn primary">Start Cooking</button>
+    <div class="timer hidden">
+      ⏳ Time Left: <span id="timeDisplay">45:00</span>
+    </div>
+    <ol class="steps">
+      <li>Mix milk powder, flour, rava, and baking powder.</li>
+      <li>Add ghee and milk to form a smooth dough.</li>
+      <li>Shape into small balls (avoid cracks).</li>
+      <li>Deep fry in medium-hot oil until golden brown.</li>
+      <li>In another pan, make sugar syrup with sugar, water, cardamom, and rose water.</li>
+      <li>Soak fried gulab jamuns in warm syrup for at least 30 minutes before serving.</li>
+    </ol>
+    <button id="nextStep" class="btn hidden">Next Step ➡️</button>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+
+    <!-- Print Button -->
+    <button onclick="window.print()" class="btn secondary">🖨️ Print Recipe</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
